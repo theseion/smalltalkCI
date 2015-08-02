@@ -1,0 +1,3 @@
+accessing
+getAnotherValue
+	^ 42

@@ -1,0 +1,14 @@
+{
+	"category" : "SWTDemo-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SWTDemo",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
