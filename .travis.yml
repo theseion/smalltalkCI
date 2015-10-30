@@ -9,6 +9,8 @@ env:
     - SMALLTALK="Squeak-4.6"
     - SMALLTALK="Squeak-4.5"
 
+    - SMALLTALK="Pharo-alpha"
+    - SMALLTALK="Pharo-stable"
     - SMALLTALK="Pharo-5.0"
     - SMALLTALK="Pharo-4.0"
     - SMALLTALK="Pharo-3.0"
