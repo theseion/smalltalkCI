@@ -2,8 +2,9 @@ sudo: false
 
 env:
   global:
-    - BASELINE=SWTDemo
-    - BASELINE_GROUP=TravisCI
+    - BASELINE="SWTDemo"
+    - BASELINE_GROUP="TravisCI"
+    - PACKAGES="packages"
   matrix:
     - SMALLTALK="Squeak-Trunk"
     - SMALLTALK="Squeak-5.0"
