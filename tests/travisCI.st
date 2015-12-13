@@ -8,12 +8,12 @@ gitPath := (Smalltalk at: #'FileDirectory' ifAbsent: [  ])
 
 Metacello new
   baseline: 'SWTDemo';
-  repository: 'filetree://', gitPath, '/smalltalkCI/packages';
+  repository: 'filetree://', gitPath, '/smalltalkCI-fixtures/packages';
   get.
 
 Metacello new
   baseline: 'SWTDemo';
-  repository: 'filetree://', gitPath, '/smalltalkCI/packages';
+  repository: 'filetree://', gitPath, '/smalltalkCI-fixtures/packages';
   load: 'TravisCI'.
 
 "Run the tests"
