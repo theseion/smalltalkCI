@@ -1,25 +1,6 @@
 language: smalltalk
 sudo: false
 
-smalltalk:
-  - Squeak-trunk
-  - Squeak-5.0
-  - Squeak-4.6
-  - Squeak-4.5
-
-  - Pharo-alpha
-  - Pharo-stable
-  - Pharo-5.0
-  - Pharo-4.0
-  - Pharo-3.0
-
-  - GemStone-3.2.12
-  - GemStone-3.1.0.6
-
-os:
-  - linux
-  - osx
-
 env:
   global:
     - BASELINE="SWTDemo"
@@ -54,71 +35,58 @@ matrix:
     - smalltalk: Squeak-4.4
       os: linux
       sudo: required
-      group: legacy
       env: BUILDERCI=true
     # - smalltalk: Squeak-4.3
     #   os: linux
     #   sudo: required
-    #   group: legacy
     #   env: BUILDERCI=true
 
     # Legacy Pharo builds using builderCI
     - smalltalk: Pharo-2.0
       os: linux
       sudo: required
-      group: legacy
       env: BUILDERCI=true
     # - smalltalk: Pharo-1.4
     #   os: linux
     #   sudo: required
-    #   group: legacy
     #   env: BUILDERCI=true
     # - smalltalk: PharoCore-1.2
     #   os: linux
     #   sudo: required
-    #   group: legacy
     #   env: BUILDERCI=true
     # - smalltalk: PharoCore-1.1
     #   os: linux
     #   sudo: required
-    #   group: legacy
     #   env: BUILDERCI=true
 
     # Legacy GemStone builds using builderCI
     - smalltalk: GemStone-3.2.7
       os: linux
       sudo: required
-      group: legacy
       env: BUILDERCI=true
     # - smalltalk: GemStone-3.2.0
     #   os: linux
     #   sudo: required
-    #   group: legacy
     #   env: BUILDERCI=true
     # - smalltalk: GemStone-3.1.0.2
     #   os: linux
     #   sudo: required
-    #   group: legacy
     #   env: BUILDERCI=true
     # - smalltalk: GemStone-3.0.1
     #   os: linux
     #   sudo: required
-    #   group: legacy
     #   env: BUILDERCI=true
     # - smalltalk: GemStone-2.4.6
     #   os: linux
     #   sudo: required
-    #   group: legacy
     #   env: BUILDERCI=true
     # - smalltalk: GemStone-2.4.5
     #   os: linux
     #   sudo: required
-    #   group: legacy
     #   env: BUILDERCI=true
     # - smalltalk: GemStone-2.4.4.1
     #   os: linux
     #   sudo: required
-    #   group: legacy
     #   env: BUILDERCI=true
   allow_failures:
     - smalltalk: GemStone-3.2.12
